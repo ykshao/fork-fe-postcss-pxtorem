@@ -5,7 +5,7 @@ A plugin for [PostCSS](https://github.com/ai/postcss) that generates rem units f
 ## Install
 
 ```shell
-$ npm install postcss postcss-pxtorem --save-dev
+$ npm install postcss @fork-fe/postcss-pxtorem --save-dev
 ```
 
 ## Usage
@@ -68,7 +68,8 @@ Default:
     replace: true,
     mediaQuery: false,
     minPixelValue: 0,
-    exclude: /node_modules/i
+    exclude: /node_modules/i,
+    unit: "rem"
 }
 ```
 
@@ -96,6 +97,7 @@ Default:
     - If value is function, you can use exclude function to return a true and the file will be ignored.
         - the callback will pass the file path as  a parameter, it should returns a Boolean result.
         - `function (file) { return file.indexOf('exclude') !== -1; }`
+- `unit` (String) 默认是rem, 也可以配置单位例如保留为px, 就设置为px
 
 ### Use with gulp-postcss and autoprefixer
 
