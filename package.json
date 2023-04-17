@@ -1,7 +1,7 @@
 {
   "name": "@fork-fe/postcss-pxtorem",
   "description": "基于postcss-pxtorem微调",
-  "version": "6.0.0-1",
+  "version": "6.0.0-2",
   "author": "ykshao",
   "license": "MIT",
   "repository": {
